@@ -10,7 +10,7 @@ https://monosnap.com/file/tSEiqx1TqTPLxNzRHLRznZiPPTRHzy
 node index.js --action get --id 5
 https://monosnap.com/file/zpIs3VA15mpRRvDo4Moz3F6ojmvV9v
 
-# Добавялем контакт
+# Добавляем контакт
 
 node index.js --action add --name Mango --email mango@gmail.com --phone 322-22-22
 https://monosnap.com/file/sDEB7oSbLQOKTrm0vmacSBFdxpWNL9
