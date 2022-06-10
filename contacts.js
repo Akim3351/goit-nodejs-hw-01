@@ -31,14 +31,16 @@ async function removeContact(contactId) {
   return existingContacts[existingIndex];
 }
 
-async function addContact(data) {
+async function addContact({name, email, phone}) {
   const existingContacts = await listContacts();
   const newContact = {
     id: shortid.generate(),
-    ...data,
+    name,
+    email,
+    phone,
   }
   const newContactsArray = [...existingContacts, newContact];
-  await fs.appendFile(contactsPath, newContactsArray);
+  await fs.writeFile(contactsPath, JSON.stringify(newContactsArray));
   return newContact;
 }
 

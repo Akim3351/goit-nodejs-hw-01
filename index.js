@@ -1,5 +1,7 @@
 const yargs = require("yargs");
-const {hideBin} = require("yargs/helpers");
+const { hideBin } = require("yargs/helpers");
+const arr = hideBin(process.argv);
+const {argv} = yargs(arr);
 const {
     listContacts,
     getContactById,
@@ -40,8 +42,5 @@ async function invokeAction({ action, id, name, email, phone }) {
     }
 }
 
-const arr = hideBin(process.argv);
-
-const {argv} = yargs(arr);
 
 invokeAction(argv);
