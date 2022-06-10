@@ -20,5 +20,9 @@
   "homepage": "https://github.com/Akim3351/goit-nodejs-hw-01#readme",
   "devDependencies": {
     "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "shortid": "^2.2.16",
+    "yargs": "^17.5.1"
   }
 }
